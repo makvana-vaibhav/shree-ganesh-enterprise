@@ -1,7 +1,7 @@
 import { Layout } from "@/components/Layout";
 import { InquiryForm } from "@/components/InquiryForm";
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
-import mapImg from "@/assets/images/WhatsApp_Image_2025-12-22_at_12.06.15_PM_1766386161459.jpeg";
+import mapImg from "@/assets/images/map.png";
 
 export default function Contact() {
   return (
