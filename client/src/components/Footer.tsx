@@ -1,7 +1,7 @@
 import { Link } from "wouter";
 import { Facebook, Twitter, Linkedin, Instagram, MapPin, Phone, Mail, ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
-import logo from "@/assets/images/sge_logo.jpg";
+import logo from "@/assets/images/sge_logo.png";
 
 export function Footer() {
   return (

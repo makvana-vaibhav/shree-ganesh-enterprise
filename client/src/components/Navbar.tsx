@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { Menu, X, Phone, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-import logo from "@/assets/images/sge_logo.jpg";
+import logo from "@/assets/images/sge_logo.png";
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -28,14 +28,14 @@ export function Navbar() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? "bg-white/95 backdrop-blur-md shadow-md py-2" : "bg-white py-4 shadow-sm"
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? "bg-white/95 backdrop-blur-md shadow-md py-1" : "bg-white py-2 shadow-sm"
         }`}
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-3">
-            <img src={logo} alt="Shree Ganesh Enterprise Logo" className="h-12 w-auto object-contain" />
+          <Link href="/" className="flex items-center gap-3 group">
+            <img src={logo} alt="Shree Ganesh Enterprise Logo" className="h-16 md:h-20 w-auto object-contain transition-transform duration-300 group-hover:scale-105" />
             <span className="font-display font-bold text-xl md:text-2xl text-secondary">
               Shree Ganesh Enterprise
             </span>
@@ -47,14 +47,21 @@ export function Navbar() {
               <Link
                 key={link.name}
                 href={link.href}
-                className={`text-sm font-medium transition-colors hover:text-primary ${location === link.href ? "text-primary font-semibold" : "text-gray-700"
+                className={`text-sm font-medium relative group py-1 ${location === link.href ? "text-primary font-bold" : "text-gray-700"
                   }`}
               >
-                {link.name}
+                <span className="relative z-10 transition-colors duration-300 group-hover:text-primary">
+                  {link.name}
+                </span>
+
+                {/* Active Indicator (Dot) - REMOVED */}
+
+                {/* Hover Underline Animation */}
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 ease-out group-hover:w-full opacity-0 group-hover:opacity-100" />
               </Link>
             ))}
             <Link href="/contact">
-              <Button size="sm" className="bg-primary hover:bg-primary/90 text-white shadow-lg shadow-primary/20">
+              <Button size="sm" className="bg-primary hover:bg-primary/90 text-white shadow-lg shadow-primary/20 hover:scale-105 transition-transform duration-300">
                 Get a Quote
               </Button>
             </Link>

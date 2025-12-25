@@ -114,7 +114,7 @@ export default function Home() {
             <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight font-display mb-4 sm:mb-6 tracking-tight">
               <motion.span variants={fadeIn} className="block">Mould Accessories &</motion.span>
               <motion.span variants={fadeIn} className="block text-primary relative inline-block">
-                Precision Manufacturing
+                Guide Pillar & Bush
                 <motion.span
                   initial={{ width: 0 }}
                   animate={{ width: "100%" }}
@@ -273,82 +273,6 @@ export default function Home() {
 
       {/* Product Showcase */}
       <ProductShowcase />
-
-      {/* PRODUCT CATEGORIES */}
-      <section className="py-16 sm:py-20 bg-white">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-center max-w-3xl mx-auto mb-12 sm:mb-16"
-          >
-            <span className="text-primary font-bold tracking-wider text-xs sm:text-sm uppercase">Our Capabilities</span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mt-3 font-display text-secondary">
-              Product Categories
-            </h2>
-            <p className="text-gray-600 mt-4">
-              Explore our wide range of manufacturing capabilities and standard components.
-            </p>
-          </motion.div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[
-              {
-                title: "Mould Alignment Accessories",
-                img: mouldAlignmentImg,
-                desc: "High-precision alignment tools for moulds and dies."
-              },
-              {
-                title: "Designer CNC Tools",
-                img: cncToolsImg,
-                desc: "Custom designed CNC tools for intricate machining."
-              },
-              {
-                title: "Milling Accessories",
-                img: millingAccessoriesImg,
-                desc: "Durable accessories for milling operations and efficiency."
-              },
-            ].map((cat, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, y: 50 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: i * 0.15, duration: 0.6, ease: "easeOut" }}
-                className="group bg-gray-50 rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-300 border border-gray-100"
-              >
-                <div className="h-64 overflow-hidden relative">
-                  <div className="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition-colors z-10" />
-                  <img
-                    src={cat.img}
-                    alt={cat.title}
-                    className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 ease-out"
-                  />
-                </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-bold text-secondary mb-2 group-hover:text-primary transition-colors">{cat.title}</h3>
-                  <p className="text-gray-600 text-sm mb-4 line-clamp-2">{cat.desc}</p>
-                  <Link href="/products" className="inline-flex items-center text-primary font-semibold text-sm group-hover:gap-2 transition-all">
-                    View Products <ArrowRight className="ml-2 w-4 h-4" />
-                    <motion.div
-                      className="absolute bottom-0 left-0 h-[1px] bg-primary w-0 group-hover:w-full transition-all duration-300"
-                    />
-                  </Link>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-
-          <div className="text-center mt-12">
-            <Link href="/products">
-              <Button size="lg" className="bg-primary hover:bg-primary/90 text-white px-8">
-                View All Products
-              </Button>
-            </Link>
-          </div>
-        </div>
-      </section>
 
       {/* STATISTICS */}
       <section className="py-16 sm:py-20 bg-secondary text-white relative overflow-hidden">
