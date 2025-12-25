@@ -9,44 +9,44 @@ import { useState } from "react";
 const staticProducts = [
   {
     id: 1,
-    name: "Precision Ejector Pins",
-    category: "Mould Accessories",
-    description: "High-hardness SKD61 ejector pins for plastic injection moulds. Nitrided surface for durability.",
+    name: "Precision Guide Pin",
+    category: "Mould Alignment Accessories",
+    description: "High-precision guide pin ensuring perfect alignment for mould bases. Durable and wear-resistant.",
     imageUrl: "/images/WhatsApp_Image_2025-12-22_at_12.02.55_PM_1766386139493.jpeg"
   },
   {
     id: 2,
-    name: "CNC Aluminum Housing",
-    category: "CNC Components",
-    description: "Custom machined aluminum housing for electronic devices. Anodized finish available.",
-    imageUrl: "/images/WhatsApp_Image_2025-12-22_at_12.02.56_PM_1766386143449.jpeg"
-  },
-  {
-    id: 3,
-    name: "Stainless Steel Gears",
-    category: "Custom Parts",
-    description: "Precision cut stainless steel gears for industrial machinery transmission systems.",
-    imageUrl: "/images/WhatsApp_Image_2025-12-22_at_12.00.19_PM_1766386134790.jpeg"
-  },
-  {
-    id: 4,
-    name: "Guide Pillars & Bushings",
-    category: "Mould Accessories",
-    description: "Standard and custom guide pillars for die sets and mould bases. High concentricity.",
+    name: "Square Support Block",
+    category: "Mould Alignment Accessories",
+    description: "Robust support blocks for mould assembly stability during operation.",
     imageUrl: "/images/WhatsApp_Image_2025-12-22_at_12.04.09_PM_1766386151677.jpeg"
   },
   {
+    id: 3,
+    name: "Custom CNC End Mill",
+    category: "Designer CNC Tools",
+    description: "Specially designed end mills for intricate cutting and shaping of industrial components.",
+    imageUrl: "/images/WhatsApp_Image_2025-12-22_at_12.02.56_PM_1766386143449.jpeg"
+  },
+  {
+    id: 4,
+    name: "Precision Collet Chuck",
+    category: "Milling Accessories",
+    description: "High-grip collet chucks for securing tools during high-speed milling operations.",
+    imageUrl: "/images/WhatsApp_Image_2025-12-22_at_12.00.19_PM_1766386134790.jpeg"
+  },
+  {
     id: 5,
-    name: "Hydraulic Fixtures",
-    category: "Industrial Tools",
-    description: "Custom hydraulic clamping fixtures for CNC machining centers.",
+    name: "Clamping Kit",
+    category: "Milling Accessories",
+    description: "Comprehensive clamping kit for securing workpieces on milling tables.",
     imageUrl: "/images/WhatsApp_Image_2025-12-22_at_12.08.40_PM_1766386177412.jpeg"
   },
   {
     id: 6,
-    name: "Die Springs",
-    category: "Mould Accessories",
-    description: "Heavy duty die springs available in various load ratings and sizes.",
+    name: "Ejector Sleeve",
+    category: "Mould Alignment Accessories",
+    description: "Precision-ground ejector sleeves for smooth mould ejection processes.",
     imageUrl: "/images/WhatsApp_Image_2025-12-22_at_12.03.44_PM_1766386148076.jpeg"
   }
 ];
@@ -56,11 +56,11 @@ export default function Products() {
   const [selectedCategory, setSelectedCategory] = useState("All");
 
   const products = (data && data.length > 0) ? data : staticProducts;
-  
+
   const categories = ["All", ...Array.from(new Set(products.map(p => p.category)))];
 
-  const filteredProducts = selectedCategory === "All" 
-    ? products 
+  const filteredProducts = selectedCategory === "All"
+    ? products
     : products.filter(p => p.category === selectedCategory);
 
   return (
@@ -76,18 +76,17 @@ export default function Products() {
 
       <section className="py-16 bg-gray-50 min-h-screen">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          
+
           {/* Category Filter */}
           <div className="flex flex-wrap justify-center gap-3 mb-12">
             {categories.map(cat => (
               <button
                 key={cat}
                 onClick={() => setSelectedCategory(cat)}
-                className={`px-5 py-2 rounded-full text-sm font-medium transition-all ${
-                  selectedCategory === cat 
-                    ? "bg-primary text-white shadow-md shadow-primary/25" 
+                className={`px-5 py-2 rounded-full text-sm font-medium transition-all ${selectedCategory === cat
+                    ? "bg-primary text-white shadow-md shadow-primary/25"
                     : "bg-white text-gray-600 hover:bg-gray-100 border border-gray-200"
-                }`}
+                  }`}
               >
                 {cat}
               </button>
@@ -107,14 +106,14 @@ export default function Products() {
           ) : (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {filteredProducts.map((product) => (
-                <div 
-                  key={product.id} 
+                <div
+                  key={product.id}
                   className="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 flex flex-col group"
                 >
                   <div className="h-64 overflow-hidden relative bg-gray-100">
-                    <img 
-                      src={product.imageUrl} 
-                      alt={product.name} 
+                    <img
+                      src={product.imageUrl}
+                      alt={product.name}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     />
                     <div className="absolute top-4 left-4 bg-white/90 backdrop-blur px-3 py-1 rounded text-xs font-bold text-secondary uppercase tracking-wider">

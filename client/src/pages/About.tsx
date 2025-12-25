@@ -21,9 +21,9 @@ export default function About() {
           <div className="flex flex-col md:flex-row gap-12 items-center">
             <div className="md:w-1/2">
               <div className="relative">
-                <img 
-                  src="/images/WhatsApp_Image_2025-12-22_at_12.06.15_PM_1766386161459.jpeg" 
-                  alt="Our Facility" 
+                <img
+                  src="/images/about-us.png"
+                  alt="Our Facility"
                   className="rounded-2xl shadow-xl w-full"
                 />
                 <div className="absolute -bottom-6 -right-6 bg-primary p-6 rounded-xl shadow-lg hidden md:block">
@@ -34,12 +34,12 @@ export default function About() {
             <div className="md:w-1/2">
               <h2 className="text-3xl font-bold text-secondary mb-6 font-display">Our Story</h2>
               <p className="text-gray-600 mb-6 leading-relaxed">
-                Founded with a vision to revolutionize the precision manufacturing landscape, Modern Industrial has grown from a small workshop to a state-of-the-art manufacturing facility serving global clients.
+                Shree Ganesh Enterprise has grown to become a leader in the manufacturing sector. We are backed by a sound infrastructure equipped with modern machinery, divided into specialized units for Designing, Quality Control, Warehousing, and Packaging.
               </p>
               <p className="text-gray-600 mb-6 leading-relaxed">
-                We specialize in producing high-quality mould accessories, CNC machined parts, and custom industrial components. Our commitment to technology investment and workforce training has allowed us to maintain the highest standards of quality and efficiency.
+                We specialize in Mould Alignment Accessories, Designer CNC Tools, and Milling Accessories. Our commitment to maintaining strict quality standards has positioned us as one of the largest stock holders in the country.
               </p>
-              
+
               <div className="grid grid-cols-2 gap-4 mt-8">
                 <div className="flex items-start gap-3">
                   <Award className="w-8 h-8 text-primary shrink-0" />
@@ -74,7 +74,7 @@ export default function About() {
                 To provide superior manufacturing solutions that empower our clients to build better products, faster and more efficiently.
               </p>
             </div>
-            
+
             <div className="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
               <div className="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center text-orange-600 mb-6">
                 <Award className="w-6 h-6" />
@@ -91,10 +91,10 @@ export default function About() {
               </div>
               <h3 className="text-xl font-bold text-secondary mb-3">Core Values</h3>
               <ul className="text-gray-600 space-y-2">
-                <li>• Precision in every detail</li>
-                <li>• Integrity in business</li>
-                <li>• Innovation in processes</li>
-                <li>• Customer-centric approach</li>
+                <li>• Best Market Prices</li>
+                <li>• Assured Quality Standards</li>
+                <li>• Quick Availability of Stock</li>
+                <li>• Customer Satisfaction</li>
               </ul>
             </div>
           </div>
