@@ -45,7 +45,11 @@ export default function Contact() {
                     </div>
                     <div>
                       <h4 className="font-bold text-gray-900 mb-1">Phone</h4>
-                      <p className="text-gray-600 text-sm mb-1">+91 97239 79439</p>
+                      <p className="text-gray-600 text-sm mb-1">
+                        <a href="tel:+919723979439" className="hover:text-primary transition-colors">
+                          +91 97239 79439
+                        </a>
+                      </p>
                       <p className="text-gray-400 text-xs">Mon-Sat 9am-8pm</p>
                     </div>
                   </div>
@@ -56,7 +60,11 @@ export default function Contact() {
                     </div>
                     <div>
                       <h4 className="font-bold text-gray-900 mb-1">Email</h4>
-                      <p className="text-gray-600 text-sm">shriganeshenterprise1234@gmail.com</p>
+                      <p className="text-gray-600 text-sm">
+                        <a href="mailto:shriganeshenterprise1234@gmail.com" className="hover:text-primary transition-colors">
+                          shriganeshenterprise1234@gmail.com
+                        </a>
+                      </p>
                     </div>
                   </div>
 
@@ -74,18 +82,26 @@ export default function Contact() {
               </div>
 
               {/* Map Placeholder */}
-              <div className="bg-gray-200 h-64 rounded-2xl overflow-hidden relative shadow-md">
-                <img
-                  src={mapImg}
-                  className="w-full h-full object-cover opacity-80"
-                  alt="Map Location"
-                />
-                <div className="absolute inset-0 flex items-center justify-center bg-black/20">
-                  <div className="bg-white/90 backdrop-blur px-4 py-2 rounded-lg text-sm font-bold shadow-lg flex items-center gap-2">
-                    <MapPin className="w-4 h-4 text-primary" /> View on Google Maps
+              {/* Map Placeholder */}
+              <a
+                href="https://www.google.com/maps/place/Ganesh+Enterprise/@22.225914,70.798443,16z/data=!4m6!3m5!1s0x3959b55955555537:0xf6cd468df5577bf!8m2!3d22.225914!4d70.7984425!16s%2Fg%2F11c2nn1ptk?hl=en&entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoASAFQAw%3D%3D"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block group"
+              >
+                <div className="bg-gray-200 h-64 rounded-2xl overflow-hidden relative shadow-md transition-transform duration-300 group-hover:scale-[1.02]">
+                  <img
+                    src={mapImg}
+                    className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-300"
+                    alt="Map Location"
+                  />
+                  <div className="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/10 transition-colors">
+                    <div className="bg-white/90 backdrop-blur px-4 py-2 rounded-lg text-sm font-bold shadow-lg flex items-center gap-2 text-primary group-hover:bg-primary group-hover:text-white transition-colors duration-300">
+                      <MapPin className="w-4 h-4" /> View on Google Maps
+                    </div>
                   </div>
                 </div>
-              </div>
+              </a>
             </div>
 
             {/* Form Side */}

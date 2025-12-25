@@ -33,7 +33,7 @@ export function InquiryForm() {
       <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6 bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
         <h3 className="text-2xl font-bold text-secondary font-display mb-2">Request a Quote</h3>
         <p className="text-muted-foreground mb-6">Fill out the form below and our team will get back to you within 24 hours.</p>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <FormField
             control={form.control}
@@ -42,7 +42,7 @@ export function InquiryForm() {
               <FormItem>
                 <FormLabel>Full Name</FormLabel>
                 <FormControl>
-                  <Input placeholder="John Doe" {...field} className="h-12 bg-gray-50 border-gray-200 focus:bg-white transition-all" />
+                  <Input placeholder="Enter your full name" {...field} className="h-12 bg-gray-50 border-gray-200 focus:bg-white transition-all" />
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -56,7 +56,7 @@ export function InquiryForm() {
               <FormItem>
                 <FormLabel>Email Address</FormLabel>
                 <FormControl>
-                  <Input type="email" placeholder="john@company.com" {...field} className="h-12 bg-gray-50 border-gray-200 focus:bg-white transition-all" />
+                  <Input type="email" placeholder="Enter your email address" {...field} className="h-12 bg-gray-50 border-gray-200 focus:bg-white transition-all" />
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -72,7 +72,7 @@ export function InquiryForm() {
               <FormItem>
                 <FormLabel>Phone Number</FormLabel>
                 <FormControl>
-                  <Input placeholder="+1 (555) 000-0000" {...field} className="h-12 bg-gray-50 border-gray-200 focus:bg-white transition-all" />
+                  <Input placeholder="Enter your phone number" {...field} className="h-12 bg-gray-50 border-gray-200 focus:bg-white transition-all" />
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -86,7 +86,7 @@ export function InquiryForm() {
               <FormItem>
                 <FormLabel>Subject</FormLabel>
                 <FormControl>
-                  <Input placeholder="Product Inquiry / Quote Request" {...field} className="h-12 bg-gray-50 border-gray-200 focus:bg-white transition-all" />
+                  <Input placeholder="Enter subject of your inquiry" {...field} className="h-12 bg-gray-50 border-gray-200 focus:bg-white transition-all" />
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -101,10 +101,10 @@ export function InquiryForm() {
             <FormItem>
               <FormLabel>Message</FormLabel>
               <FormControl>
-                <Textarea 
-                  placeholder="Tell us about your project requirements..." 
-                  className="min-h-[120px] bg-gray-50 border-gray-200 focus:bg-white transition-all resize-y" 
-                  {...field} 
+                <Textarea
+                  placeholder="Tell us about your project requirements..."
+                  className="min-h-[120px] bg-gray-50 border-gray-200 focus:bg-white transition-all resize-y"
+                  {...field}
                 />
               </FormControl>
               <FormMessage />
@@ -112,8 +112,8 @@ export function InquiryForm() {
           )}
         />
 
-        <Button 
-          type="submit" 
+        <Button
+          type="submit"
           disabled={mutation.isPending}
           className="w-full h-12 text-base font-semibold bg-primary hover:bg-primary/90 text-white shadow-lg shadow-primary/25 hover:shadow-xl hover:shadow-primary/30 transition-all duration-300"
         >
