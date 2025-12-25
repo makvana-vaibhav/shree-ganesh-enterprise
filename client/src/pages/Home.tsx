@@ -82,7 +82,7 @@ export default function Home() {
             className="w-full h-full"
           >
             <img
-              src="/images/hero-bg.png"
+              src={heroBg}
               alt="Shree Ganesh Enterprise Factory"
               className="w-full h-full object-cover opacity-40"
             />
@@ -205,7 +205,7 @@ export default function Home() {
                 className="relative rounded-2xl overflow-hidden shadow-2xl"
               >
                 <img
-                  src="/images/about-us.png"
+                  src={aboutImg}
                   alt="Factory Operations"
                   className="w-full h-auto object-cover"
                 />
