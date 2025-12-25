@@ -6,6 +6,12 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, CheckCircle2, Factory, ShieldCheck, Truck, Cog } from "lucide-react";
 import { motion } from "framer-motion";
 
+import heroBg from "@/assets/images/hero-bg.png";
+import aboutImg from "@/assets/images/about-us.png";
+import mouldAlignmentImg from "@/assets/images/mould_alignment.jpg";
+import cncToolsImg from "@/assets/images/designer_cnc_tools.jpg";
+import millingAccessoriesImg from "@/assets/images/cnc_milling.jpg";
+
 // Animation variants
 const fadeIn = {
   initial: { opacity: 0, y: 20 },
@@ -290,17 +296,17 @@ export default function Home() {
             {[
               {
                 title: "Mould Alignment Accessories",
-                img: "/images/mould_alignment.jpg",
+                img: mouldAlignmentImg,
                 desc: "High-precision alignment tools for moulds and dies."
               },
               {
                 title: "Designer CNC Tools",
-                img: "/images/designer_cnc_tools.jpg",
+                img: cncToolsImg,
                 desc: "Custom designed CNC tools for intricate machining."
               },
               {
                 title: "Milling Accessories",
-                img: "/images/cnc_milling.jpg",
+                img: millingAccessoriesImg,
                 desc: "Durable accessories for milling operations and efficiency."
               },
             ].map((cat, i) => (

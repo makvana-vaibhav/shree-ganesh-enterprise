@@ -1,6 +1,7 @@
 import { Link } from "wouter";
 import { Facebook, Twitter, Linkedin, Instagram, MapPin, Phone, Mail, ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
+import logo from "@/assets/images/sge_logo.jpg";
 
 export function Footer() {
   return (
@@ -17,7 +18,7 @@ export function Footer() {
           {/* Company Info */}
           <div className="space-y-4">
             <div className="flex items-center gap-2 mb-4">
-              <img src="/images/sge_logo.jpg" alt="Logo" className="w-8 h-8 object-contain bg-white rounded-md p-0.5" />
+              <img src={logo} alt="Logo" className="w-8 h-8 object-contain bg-white rounded-md p-0.5" />
               <div className="flex flex-col">
                 <span className="font-display font-bold text-lg leading-none">Shree Ganesh</span>
                 <span className="text-[10px] text-gray-300 font-medium tracking-widest">ENTERPRISE</span>

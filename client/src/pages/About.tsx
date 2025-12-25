@@ -1,5 +1,6 @@
 import { Layout } from "@/components/Layout";
 import { CheckCircle2, Award, Users, Globe } from "lucide-react";
+import aboutImg from "@/assets/images/about-us.png";
 
 export default function About() {
   return (
@@ -22,7 +23,7 @@ export default function About() {
             <div className="md:w-1/2">
               <div className="relative">
                 <img
-                  src="/images/about-us.png"
+                  src={aboutImg}
                   alt="Our Facility"
                   className="rounded-2xl shadow-xl w-full"
                 />

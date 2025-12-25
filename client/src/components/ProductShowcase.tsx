@@ -3,15 +3,24 @@ import { useEffect, useState, useCallback } from "react";
 import { ChevronLeft, ChevronRight, ZoomIn } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
+import item1 from "@/assets/images/item1.jpeg";
+import item2 from "@/assets/images/item2.jpeg";
+import item3 from "@/assets/images/item3.jpeg";
+import item4 from "@/assets/images/item4.jpeg";
+import item5 from "@/assets/images/item5.jpeg";
+import item6 from "@/assets/images/item6.jpeg";
+import item7 from "@/assets/images/item7.jpeg";
+import item8 from "@/assets/images/item8.jpeg";
+
 const products = [
-    { id: 1, img: "/images/item1.jpeg", title: "Precision Component" },
-    { id: 2, img: "/images/item2.jpeg", title: "Industrial Tool" },
-    { id: 3, img: "/images/item3.jpeg", title: "Mould Accessory" },
-    { id: 4, img: "/images/item4.jpeg", title: "CNC Part" },
-    { id: 5, img: "/images/item5.jpeg", title: "Machined Unit" },
-    { id: 6, img: "/images/item6.jpeg", title: "Factory Tooling" },
-    { id: 7, img: "/images/item7.jpeg", title: "High-Tolerance Part" },
-    { id: 8, img: "/images/item8.jpeg", title: "Custom Fabrication" },
+    { id: 1, img: item1, title: "Precision Component" },
+    { id: 2, img: item2, title: "Industrial Tool" },
+    { id: 3, img: item3, title: "Mould Accessory" },
+    { id: 4, img: item4, title: "CNC Part" },
+    { id: 5, img: item5, title: "Machined Unit" },
+    { id: 6, img: item6, title: "Factory Tooling" },
+    { id: 7, img: item7, title: "High-Tolerance Part" },
+    { id: 8, img: item8, title: "Custom Fabrication" },
 ];
 
 export function ProductShowcase() {

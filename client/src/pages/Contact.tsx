@@ -1,6 +1,7 @@
 import { Layout } from "@/components/Layout";
 import { InquiryForm } from "@/components/InquiryForm";
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
+import mapImg from "@/assets/images/WhatsApp_Image_2025-12-22_at_12.06.15_PM_1766386161459.jpeg";
 
 export default function Contact() {
   return (
@@ -75,7 +76,7 @@ export default function Contact() {
               {/* Map Placeholder */}
               <div className="bg-gray-200 h-64 rounded-2xl overflow-hidden relative shadow-md">
                 <img
-                  src="/images/WhatsApp_Image_2025-12-22_at_12.06.15_PM_1766386161459.jpeg"
+                  src={mapImg}
                   className="w-full h-full object-cover opacity-80"
                   alt="Map Location"
                 />

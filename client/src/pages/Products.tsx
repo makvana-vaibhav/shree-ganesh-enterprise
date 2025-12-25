@@ -5,6 +5,13 @@ import { Button } from "@/components/ui/button";
 import { Loader2, AlertCircle } from "lucide-react";
 import { useState } from "react";
 
+import img1 from "@/assets/images/WhatsApp_Image_2025-12-22_at_12.02.55_PM_1766386139493.jpeg";
+import img2 from "@/assets/images/WhatsApp_Image_2025-12-22_at_12.04.09_PM_1766386151677.jpeg";
+import img3 from "@/assets/images/WhatsApp_Image_2025-12-22_at_12.02.56_PM_1766386143449.jpeg";
+import img4 from "@/assets/images/WhatsApp_Image_2025-12-22_at_12.00.19_PM_1766386134790.jpeg";
+import img5 from "@/assets/images/WhatsApp_Image_2025-12-22_at_12.08.40_PM_1766386177412.jpeg";
+import img6 from "@/assets/images/WhatsApp_Image_2025-12-22_at_12.03.44_PM_1766386148076.jpeg";
+
 // Fallback data if API returns empty
 const staticProducts = [
   {
@@ -12,42 +19,42 @@ const staticProducts = [
     name: "Precision Guide Pin",
     category: "Mould Alignment Accessories",
     description: "High-precision guide pin ensuring perfect alignment for mould bases. Durable and wear-resistant.",
-    imageUrl: "/images/WhatsApp_Image_2025-12-22_at_12.02.55_PM_1766386139493.jpeg"
+    imageUrl: img1
   },
   {
     id: 2,
     name: "Square Support Block",
     category: "Mould Alignment Accessories",
     description: "Robust support blocks for mould assembly stability during operation.",
-    imageUrl: "/images/WhatsApp_Image_2025-12-22_at_12.04.09_PM_1766386151677.jpeg"
+    imageUrl: img2
   },
   {
     id: 3,
     name: "Custom CNC End Mill",
     category: "Designer CNC Tools",
     description: "Specially designed end mills for intricate cutting and shaping of industrial components.",
-    imageUrl: "/images/WhatsApp_Image_2025-12-22_at_12.02.56_PM_1766386143449.jpeg"
+    imageUrl: img3
   },
   {
     id: 4,
     name: "Precision Collet Chuck",
     category: "Milling Accessories",
     description: "High-grip collet chucks for securing tools during high-speed milling operations.",
-    imageUrl: "/images/WhatsApp_Image_2025-12-22_at_12.00.19_PM_1766386134790.jpeg"
+    imageUrl: img4
   },
   {
     id: 5,
     name: "Clamping Kit",
     category: "Milling Accessories",
     description: "Comprehensive clamping kit for securing workpieces on milling tables.",
-    imageUrl: "/images/WhatsApp_Image_2025-12-22_at_12.08.40_PM_1766386177412.jpeg"
+    imageUrl: img5
   },
   {
     id: 6,
     name: "Ejector Sleeve",
     category: "Mould Alignment Accessories",
     description: "Precision-ground ejector sleeves for smooth mould ejection processes.",
-    imageUrl: "/images/WhatsApp_Image_2025-12-22_at_12.03.44_PM_1766386148076.jpeg"
+    imageUrl: img6
   }
 ];
 
@@ -84,8 +91,8 @@ export default function Products() {
                 key={cat}
                 onClick={() => setSelectedCategory(cat)}
                 className={`px-5 py-2 rounded-full text-sm font-medium transition-all ${selectedCategory === cat
-                    ? "bg-primary text-white shadow-md shadow-primary/25"
-                    : "bg-white text-gray-600 hover:bg-gray-100 border border-gray-200"
+                  ? "bg-primary text-white shadow-md shadow-primary/25"
+                  : "bg-white text-gray-600 hover:bg-gray-100 border border-gray-200"
                   }`}
               >
                 {cat}

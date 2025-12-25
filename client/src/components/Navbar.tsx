@@ -3,6 +3,8 @@ import { useState, useEffect } from "react";
 import { Menu, X, Phone, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
+import logo from "@/assets/images/sge_logo.jpg";
+
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -33,7 +35,7 @@ export function Navbar() {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3">
-            <img src="/images/sge_logo.jpg" alt="Shree Ganesh Enterprise Logo" className="h-12 w-auto object-contain" />
+            <img src={logo} alt="Shree Ganesh Enterprise Logo" className="h-12 w-auto object-contain" />
             <span className="font-display font-bold text-xl md:text-2xl text-secondary">
               Shree Ganesh Enterprise
             </span>
