@@ -137,11 +137,11 @@ export default function Home() {
               variants={fadeIn}
               className="flex flex-col sm:flex-row gap-4"
             >
-              <Link href="/products">
+              <a href="/catalog.pdf" target="_blank" rel="noopener noreferrer">
                 <Button size="lg" className="h-12 sm:h-14 px-6 sm:px-8 text-base sm:text-lg bg-primary hover:bg-primary/90 text-white shadow-lg shadow-primary/25 border-0 rounded-none transform transition-transform hover:scale-105 duration-300">
-                  Explore Products
+                  View Catalog
                 </Button>
-              </Link>
+              </a>
               <Link href="/contact">
                 <Button size="lg" variant="outline" className="h-12 sm:h-14 px-6 sm:px-8 text-base sm:text-lg border-white/30 text-white hover:bg-white/10 hover:text-white backdrop-blur-sm rounded-none transform transition-transform hover:scale-105 duration-300">
                   Contact Us

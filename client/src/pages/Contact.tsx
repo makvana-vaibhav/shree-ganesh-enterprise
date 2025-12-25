@@ -1,7 +1,7 @@
 import { Layout } from "@/components/Layout";
 import { InquiryForm } from "@/components/InquiryForm";
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
-import mapImg from "@/assets/images/map.png";
+import mapImg from "@/assets/images/map_image.png";
 
 export default function Contact() {
   return (

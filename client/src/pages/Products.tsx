@@ -5,12 +5,12 @@ import { Button } from "@/components/ui/button";
 import { Loader2, AlertCircle } from "lucide-react";
 import { useState } from "react";
 
-import img1 from "@/assets/images/WhatsApp_Image_2025-12-22_at_12.02.55_PM_1766386139493.jpeg";
-import img2 from "@/assets/images/WhatsApp_Image_2025-12-22_at_12.04.09_PM_1766386151677.jpeg";
-import img3 from "@/assets/images/WhatsApp_Image_2025-12-22_at_12.02.56_PM_1766386143449.jpeg";
-import img4 from "@/assets/images/WhatsApp_Image_2025-12-22_at_12.00.19_PM_1766386134790.jpeg";
-import img5 from "@/assets/images/WhatsApp_Image_2025-12-22_at_12.08.40_PM_1766386177412.jpeg";
-import img6 from "@/assets/images/WhatsApp_Image_2025-12-22_at_12.03.44_PM_1766386148076.jpeg";
+import img1 from "@/assets/images/item1.jpeg";
+import img2 from "@/assets/images/item2.jpeg";
+import img3 from "@/assets/images/item3.jpeg";
+import img4 from "@/assets/images/item4.jpeg";
+import img5 from "@/assets/images/item5.jpeg";
+import img6 from "@/assets/images/item6.jpeg";
 
 // Fallback data if API returns empty
 const staticProducts = [
